@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6407209138.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="searchBar">
+        <input id="js--searchBar" type="text" placeholder="Search for a product here..." class="searchBar__input">
+        <i class="fa-solid fa-magnifying-glass searchBar__glass"></i>
+    </section>
+
+    <section id="js--checkoutWindow" class="checkout a-popup">
+        <ul class="checkout__list">
+            <li class="checkout__listItem">
+                <img src="img/buzz.jpg" alt="" class="checkout__image">
+                <p class="checkout__title">Buzz Lightyear</p>
+                <p id="js--amount-buzz"  class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="img/darkvader.jpg" alt="" class="checkout__image">
+                <p class="checkout__title">Darth Vader</p>
+                <p id="js--amount-darth"  class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="img/robotguy.jpg" alt="" class="checkout__image">
+                <p class="checkout__title">C-3PO</p>
+                <p id="js--amount-c3po"  class="checkout__amount"></p>
+            </li>
+        </ul>
+    </section>
+
+    <article class="modal a-popup" id="js--shoppingModal">
+        &#10003;Added to cart!
+    </article>
+    <button id="js--checkoutButton" class="shoppingCart">
+        Logo
+        <div class="shoppingCart__message">0</div>
+    </button>
+    <section class="fill"></section>
+    <main>
+        <ul class="games">
+            <li data-title="BUZZ LIGHTYEAR - PIXAR" class="games__game ">
+                <figure class="games__figure"><img src="img/buzz.jpg" alt="" class="games__img"></figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€49</h2>
+                    <h3 class="games__h3">Buzz Lightyear - Pixar</h3>
+                    <div class="games__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="buzz" class="games__button">Add to cart</button>
+                </section>
+            </li>
+            <li data-title="DARTH VADER - STAR WARS" class="games__game ">
+                <figure class="games__figure"><img src="img/darkvader.jpg" alt="" class="games__img"></figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€42</h2>
+                    <h3 class="games__h3">Darth Vader - Star Wars</h3>
+                    <div class="games__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="darth" class="games__button">Add to cart</button>
+                </section>
+            </li>
+            <li data-title="C3PO - STAR WARS" class="games__game games__game--third ">
+                <figure class="games__figure"><img src="img/robotguy.jpg" alt="" class="games__img"></figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€39</h2>
+                    <h3 class="games__h3">C-3PO - Star Wars</h3>
+                    <div class="games__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="c3po" class="games__button">Add to cart</button>
+                </section>
+            </li>
+        </ul>
+    </main>
+    <section class="fill"></section>
+</body>
+</html>
